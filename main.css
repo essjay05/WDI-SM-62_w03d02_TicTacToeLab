@@ -2,3 +2,93 @@
 /*------------ Design for Xs & Os Game------ */
 /*------------ Design for Xs & Os Game------ */
 /*------------ Design for Xs & Os Game------ */
+
+
+html {
+    /*box-sizing: border-box; */
+}
+
+/*----------- GAME BOARD ---------------*/
+*  {
+   text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer {
+    grid-template-areas:
+        "TL TC TR"
+        "ML MC MR"
+        "BL BC BR";
+}
+
+.board {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.cell {
+    border: 1px solid black;
+}
+
+
+/* -------------INDIVIDUAL BOXES -------------------- */
+
+.topLeft {
+    grid-area: TL;
+    width: 100%;
+    height: 100%;
+    border: 1px solid cyan;
+}
+.topCenter {
+    grid-area: TC;
+    width: 100%;
+    height: 100%;
+    border: 1px solid cyan;
+}
+.topRight {
+    grid-area: TR;
+    width: 100%;
+    height: 100%;
+    border: 1px solid cyan;
+}
+.midLeft {
+    grid-area: TL;
+    width: 100%;
+    height: 100%;
+    border: 1px solid cyan;
+}
+.midCenter {
+    grid-area: TC;
+    width: 100%;
+    height: 100%;
+    border: 1px solid cyan;
+}
+.midRight {
+    grid-area: TR;
+    width: 100%;
+    height: 100%;
+    border: 1px solid cyan;
+}
+.bottomLeft {
+    grid-area: TL;
+    width: 100%;
+    height: 100%;
+    border: 1px solid cyan;
+}
+.bottomCenter {
+    grid-area: TC;
+    width: 100%;
+    height: 100%;
+    border: 1px solid cyan;
+}
+.bottomRight {
+    grid-area: TR;
+    width: 100%;
+    height: 100%;
+    border: 1px solid cyan;
+}
