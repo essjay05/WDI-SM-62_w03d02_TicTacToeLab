@@ -6,18 +6,17 @@ var playerO = 'O';
 var currentPlayer = playerX;
 
 
-//Create variables for cells to listen for click
-// var cells = document.querySelectorAll('.cell');
-// var cell = cells.children;
-
+// Creates cells ARRAY of each cell in the game board
 var cells = document.getElementsByClassName('cell');
 
+
+//Adds event Listener to each cell and allows each cell to get marked upon CLICK
 for (var i=0; i<cells.length; i++) {
     console.log(cells[i]);
     cells[i].addEventListener('click', markCell);
 }
 
-// Function to Mark Cell and change to next player upon click
+// Function to Mark Cell and switch to next player (toggle btw 'X' / 'O' ) upon click
 function markCell() {
     this.innerText = currentPlayer;
     if (currentPlayer === playerX) {
@@ -27,15 +26,3 @@ function markCell() {
      }
      cells[i].removeEventListener('click', markCell);
 }
-
-
-
-// Disable clicked cell from being clicked again
-// function usedCell() {
-//     if cell[i]
-// }
-
-
-// cells.addEventListener('click', function (go) {
-//     console.log('Go');
-// })
