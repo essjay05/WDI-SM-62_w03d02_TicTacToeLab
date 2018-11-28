@@ -31,63 +31,63 @@ main {
     grid-template-columns: 100px 100px 100px;
 }
 
-.cell {
+. {
     border: 1px solid black;
 }
 
 
 /* -------------INDIVIDUAL BOXES -------------------- */
 
-.topLeft {
+.TL {
     grid-area: TL;
     width: 100%;
     height: 100%;
     border: 1px solid cyan;
 }
-.topCenter {
+.TC {
     grid-area: TC;
     width: 100%;
     height: 100%;
     border: 1px solid cyan;
 }
-.topRight {
+.TR {
     grid-area: TR;
     width: 100%;
     height: 100%;
     border: 1px solid cyan;
 }
-.midLeft {
-    grid-area: TL;
+.ML {
+    grid-area: ML;
     width: 100%;
     height: 100%;
     border: 1px solid cyan;
 }
-.midCenter {
-    grid-area: TC;
+.MC {
+    grid-area: MC;
     width: 100%;
     height: 100%;
     border: 1px solid cyan;
 }
-.midRight {
-    grid-area: TR;
+.MR {
+    grid-area: MR;
     width: 100%;
     height: 100%;
     border: 1px solid cyan;
 }
-.bottomLeft {
-    grid-area: TL;
+.BL {
+    grid-area: BL;
     width: 100%;
     height: 100%;
     border: 1px solid cyan;
 }
-.bottomCenter {
-    grid-area: TC;
+.BC {
+    grid-area: BC;
     width: 100%;
     height: 100%;
     border: 1px solid cyan;
 }
-.bottomRight {
-    grid-area: TR;
+.BR {
+    grid-area: BR;
     width: 100%;
     height: 100%;
     border: 1px solid cyan;
