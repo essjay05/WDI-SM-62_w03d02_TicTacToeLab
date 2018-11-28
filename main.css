@@ -18,20 +18,24 @@ main {
     justify-content: center;
     align-items: center;
 }
+/*
 .gridContainer {
+    
+    border: 1px solid green
+}*/
+
+.gridContainer {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    border: 1px solid red;
     grid-template-areas:
         "TL TC TR"
         "ML MC MR"
         "BL BC BR";
 }
 
-.board {
-    display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px;
-}
-
-. {
+.cell {
     border: 1px solid black;
 }
 
